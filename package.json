@@ -1,0 +1,41 @@
+{
+  "name": "@crmleaf/pf-calculator",
+  "version": "1.0.0",
+  "description": "EPF employee, employer and EPS shares with the wage ceiling applied.",
+  "keywords": ["epf", "eps", "provident-fund", "epfo", "payroll", "india"],
+  "license": "MIT",
+  "homepage": "https://www.indpayroll.com/free-tools/pf-calculator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crmleaf/pf-calculator.git",
+    "directory": "tools/pf-calculator"
+  },
+  "bugs": {
+    "url": "https://github.com/crmleaf/pf-calculator/issues"
+  },
+  "type": "module",
+  "main": "./js/index.js",
+  "types": "./js/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./js/index.d.ts",
+      "default": "./js/index.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "js",
+    "resources/assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@crmleaf/payroll-js": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
